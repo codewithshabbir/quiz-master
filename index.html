@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-900 min-h-screen flex flex-col">
     <!-- Header -->
-    <header class="flex justify-between items-center bg-gray-800 px-6 py-4 shadow-md shadow-gray-400 sticky top-0 z-10">
+    <header class="flex justify-between items-center bg-gray-800 px-24 py-4 shadow-md shadow-gray-400 sticky top-0 z-10">
         <div class="flex items-center space-x-2">
             <div class="text-green-600 text-2xl">
                 <i class="fas fa-question-circle"></i>
             </div>
-            <h1 class="text-xl font-bold text-gray-700">Quiz <span class="text-green-500">Spark</span></h1>
+            <h1 class="text-xl font-bold text-white">Quiz <span class="text-green-500">Master</span></h1>
         </div>
         <div class="flex items-center space-x-4">
             <p class="text-gray-600">Welcome: <span class="font-bold">quizUser</span></p>
@@ -24,75 +23,25 @@
     </header>
 
     <!-- Main Content -->
-    <main class="p-6 flex-grow">
+    <main class="p-6 px-24 py-14 flex-grow">
         <h2 class="text-lg font-bold text-white mb-4">My Quizzes</h2>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <!-- Quiz Card: HTML -->
-            <div class="bg-gray-800 rounded-lg shadow-md shadow-gray-600 p-4 flex flex-col justify-between">
-                <div class="h-28 rounded-md flex justify-center items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" class="h-16">
-                </div>
-                <h3 class="mt-4 font-bold text-gray-100">HTML Quiz</h3>
-                <p class="text-gray-400">5 question(s)</p>
-                <div class="flex justify-between items-center mt-4">
-                    <button class="bg-slate-700 text-white py-2 px-4 rounded-full hover:bg-slate-600">Start Quiz</button>
-                </div>
-            </div>
-
-            <!-- Quiz Card: CSS -->
-            <div class="bg-gray-800 rounded-lg shadow-md shadow-gray-600 p-4 flex flex-col justify-between">
-                <div class="h-28 rounded-md flex justify-center items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" class="h-16">
-                </div>
-                <h3 class="mt-4 font-bold text-gray-100">CSS Quiz</h3>
-                <p class="text-gray-400">8 question(s)</p>
-                <div class="flex justify-between items-center mt-4">
-                    <button class="bg-slate-700 text-white py-2 px-4 rounded-full hover:bg-slate-600">Start Quiz</button>
-                </div>
-            </div>
-
-            <!-- Quiz Card: Bootstrap -->
-            <div class="bg-gray-800 rounded-lg shadow-md shadow-gray-600 p-4 flex flex-col justify-between">
-                <div class="h-28 rounded-md flex justify-center items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Bootstrap" class="h-16">
-                </div>
-                <h3 class="mt-4 font-bold text-gray-100">Bootstrap Quiz</h3>
-                <p class="text-gray-400">6 question(s)</p>
-                <div class="flex justify-between items-center mt-4">
-                    <button class="bg-slate-700 text-white py-2 px-4 rounded-full hover:bg-slate-600">Start Quiz</button>
-                </div>
-            </div>
-
-            <!-- Quiz Card: Tailwind CSS -->
-            <div class="bg-gray-800 rounded-lg shadow-md shadow-gray-600 p-4 flex flex-col justify-between">
-                <div class="h-28 rounded-md flex justify-center items-center">
-                    <img src="https://tailwindcss.com/_next/static/media/mark.b03ef2b5.svg" alt="Tailwind CSS" class="h-16">
-                </div>
-                <h3 class="mt-4 font-bold text-gray-100">Tailwind CSS Quiz</h3>
-                <p class="text-gray-400">4 question(s)</p>
-                <div class="flex justify-between items-center mt-4">
-                    <button class="bg-slate-700 text-white py-2 px-4 rounded-full hover:bg-slate-600">Start Quiz</button>
-                </div>
-            </div>
-
-            <!-- Quiz Card: JavaScript -->
-            <div class="bg-gray-800 rounded-lg shadow-md shadow-gray-600 p-4 flex flex-col justify-between">
-                <div class="h-28 rounded-md flex justify-center items-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" class="h-16">
-                </div>
-                <h3 class="mt-4 font-bold text-gray-100">JavaScript Quiz</h3>
-                <p class="text-gray-400">10 question(s)</p>
-                <div class="flex justify-between items-center mt-4">
-                    <button class="bg-slate-700 text-white py-2 px-4 rounded-full hover:bg-slate-600">Start Quiz</button>
-                </div>
-            </div>
+        <div id="quiz-cards-wrapper" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 py-4 shadow-inner shadow-gray-600">
-        <div class="text-center text-white">&copy; 2024 Quiz Spark. All rights reserved.</div>
+    <footer class="bg-gray-800 py-4 px-24 shadow-inner shadow-gray-600">
+        <div class="flex justify-between text-white py-4">
+            <p class="text-sm md:text-base">
+                &copy; 2024 <span class="font-semibold">Quiz Spark</span>. All rights reserved.
+            </p>
+            <p class="text-xs md:text-sm mt-2">
+                Design and Developed by <span class="font-semibold">Visionary WebCraft</span>
+            </p>
+        </div>
     </footer>
+
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
