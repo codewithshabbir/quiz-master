@@ -1,0 +1,24 @@
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group select:focus + label,
+.input-group select:not(:placeholder-shown) + label {
+  top: -0.7rem;
+  left: 0.75rem;
+  font-size: 0.75rem;
+  color: white; /* Text color */
+  background: #1f2937; /* Gray-800 */
+  padding: 0 0.25rem;
+}
+.input-group label {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.75rem;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  color: #9ca3af; /* Gray-400 */
+  background: transparent;
+}

@@ -1,7 +1,7 @@
 export const quizData = [
   {
     quizTitle: "HTML",
-    quizLogoSrc: "./images/html-1.svg",
+    quizLogoSrc: "/assets/images/html-1.svg",
     quizQuestions: [
       {
         id: 1,
@@ -85,7 +85,7 @@ export const quizData = [
   },
   {
     quizTitle: "CSS",
-    quizLogoSrc: "./images/css-3.svg",
+    quizLogoSrc: "/assets/images/css-3.svg",
     quizQuestions: [
       {
         id: 1,
@@ -176,7 +176,7 @@ export const quizData = [
   },
   {
     quizTitle: "JavaScript",
-    quizLogoSrc: "./images/javascript-1.svg",
+    quizLogoSrc: "/assets/images/javascript-1.svg",
     quizQuestions: [
       {
         id: 1,
@@ -266,7 +266,7 @@ export const quizData = [
   },
   {
     quizTitle: "Bootstrap",
-    quizLogoSrc: "./images/Bootstrap_logo.svg",
+    quizLogoSrc: "/assets/images/Bootstrap_logo.svg",
     quizQuestions: [
       {
         id: 1,
@@ -350,7 +350,7 @@ export const quizData = [
   },
   {
     quizTitle: "Tailwind CSS",
-    quizLogoSrc: "./images/tailwindcss.svg",
+    quizLogoSrc: "/assets/images/tailwindcss.svg",
     quizQuestions: [
       {
         id: 1,

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Portal Sign Up</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 my-20 p-8 rounded-lg shadow-lg w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-6 text-center text-white">Sign Up</h2>
+      <form>
+        <!-- Username -->
+        <div class="input-group">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-white focus:outline-none focus:border-indigo-500"
+            placeholder=" "
+            required
+          />
+          <label for="username" class="text-sm">Username</label>
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-white focus:outline-none focus:border-indigo-500"
+            placeholder=" "
+            required
+          />
+          <label for="email" class="text-sm">Email</label>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-white focus:outline-none focus:border-indigo-500"
+            placeholder=" "
+            required
+          />
+          <label for="password" class="text-sm">Password</label>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group">
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-600 rounded-md shadow-sm text-white focus:outline-none focus:border-indigo-500"
+            placeholder=" "
+            required
+          />
+          <label for="confirm-password" class="text-sm">Confirm Password</label>
+        </div>
+
+        <!-- Gender -->
+        <div class="mb-4" id="gender-container">
+          <label class="text-sm block mb-2 text-gray-400">Gender</label>
+          <div class="flex space-x-4">
+            <!-- Male -->
+            <label class="inline-flex items-center">
+              <input
+                type="radio"
+                name="gender"
+                value="Male"
+                class="form-radio h-4 w-4 text-indigo-600 border-gray-600 bg-gray-700 focus:ring-indigo-500"
+                required
+              />
+              <span class="ml-2 text-white">Male</span>
+            </label>
+            <!-- Female -->
+            <label class="inline-flex items-center">
+              <input
+                type="radio"
+                name="gender"
+                value="Female"
+                class="form-radio h-4 w-4 text-indigo-600 border-gray-600 bg-gray-700 focus:ring-indigo-500"
+                required
+              />
+              <span class="ml-2 text-white">Female</span>
+            </label>
+            <!-- Other -->
+            <label class="inline-flex items-center">
+              <input
+                type="radio"
+                name="gender"
+                value="Other"
+                class="form-radio h-4 w-4 text-indigo-600 border-gray-600 bg-gray-700 focus:ring-indigo-500"
+                required
+              />
+              <span class="ml-2 text-white">Other</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button
+          id="submit"
+          class="w-full flex items-center justify-center bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none"
+        >
+          Sign Up
+        </button>
+        <p class="mt-4 text-center text-sm text-white">
+          Already have an account?
+          <a
+            href="#"
+            class="text-white font-bold outline-none hover:text-indigo-500"
+            >Log in</a
+          >
+        </p>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./assets/js/signup.js" type="module"></script>
+  </body>
+</html>
